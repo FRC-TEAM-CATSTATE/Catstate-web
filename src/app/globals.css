@@ -42,7 +42,6 @@ body {
 }
 
 .tex-concrete { background-image: url("/textures/mirco concrete.jpg"); background-size: cover; background-position: center; }
-.tex-carbon { background-image: url("/textures/carbon fibre.jpg"); background-size: cover; background-position: center; }
 .tex-grid-dark { background-image: url("/textures/dark bg grid.jpg"); background-size: cover; background-position: center; }
 .tex-drafting { background-image: url("/textures/industrial drafting paper.jpg"); background-size: cover; background-position: center; }
 .tex-grid { background-image: url("/textures/grid.jpg"); background-size: cover; background-position: center; }

@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="bg-paper text-ink">
       {/* HERO */}
-      <section className="text-paper relative overflow-hidden rough tex-grid-dark">
+      <section className="text-paper relative overflow-hidden rough tex-grid">
         <div className="absolute inset-0 bg-ink/75" />
         <div className="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center relative z-10">
           <motion.div

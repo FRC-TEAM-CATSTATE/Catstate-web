@@ -12,16 +12,10 @@
   --color-brutal-green: #CAD9DC;
   --color-brutal-blue: #F2A65A;
 
-<<<<<<< HEAD
   --font-heading: var(--font-nasalization);
-  --font-subheading: var(--font-chakra-petch);
   --font-body: var(--font-exo);
+  --font-subheading: var(--font-chakra-petch);
   --font-mono: var(--font-jetbrains-mono);
-=======
-  --font-heading: var(--font-space-grotesk);
-  --font-body: var(--font-inter);
-  --font-mono: var(--font-ibm-plex-mono);
->>>>>>> b173aabf00aa5278b4abb93f6c373025d22fe29d
 }
 
 .brutal {
@@ -35,22 +29,14 @@
 }
 
 :root {
-<<<<<<< HEAD
   --background: #F9FAF7;
-=======
-  --background: #F5F6F3;
->>>>>>> b173aabf00aa5278b4abb93f6c373025d22fe29d
   --foreground: #161F30;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-<<<<<<< HEAD
   font-family: var(--font-exo), system-ui, sans-serif;
-=======
-  font-family: var(--font-inter), system-ui, sans-serif;
->>>>>>> b173aabf00aa5278b4abb93f6c373025d22fe29d
   background-image: url("/textures/dark-noise.svg");
   background-repeat: repeat;
   background-size: 200px 200px;
@@ -63,7 +49,6 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-<<<<<<< HEAD
   font-family: var(--font-nasalization), system-ui, sans-serif;
 }
 
@@ -75,11 +60,4 @@ h1, h2, h3, h4, h5, h6 {
   height: 12px;
   background: repeating-linear-gradient(90deg, var(--color-ink) 0px, var(--color-ink) 8px, var(--color-steel) 8px, var(--color-steel) 16px, var(--color-amber) 16px, var(--color-amber) 24px);
   margin: 1.5rem 0;
-=======
-  font-family: var(--font-space-grotesk), system-ui, sans-serif;
-}
-
-.font-mono {
-  font-family: var(--font-ibm-plex-mono), monospace;
->>>>>>> b173aabf00aa5278b4abb93f6c373025d22fe29d
 }

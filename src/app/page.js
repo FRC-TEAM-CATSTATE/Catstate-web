@@ -20,7 +20,7 @@ export default function Home() {
     <div className="bg-paper text-ink">
       {/* HERO */}
       <section className="text-paper relative overflow-hidden rough tex-grid">
-        <div className="absolute inset-0 bg-ink/75" />
+        <div className="absolute inset-0 bg-ink/90" />
         <div className="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center relative z-10">
           <motion.div
             initial="hidden"
@@ -71,15 +71,17 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center"
+            className="flex justify-center relative"
           >
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent z-10 pointer-events-none" />
             <Image
-              src="/assets/Robotic%20Cat%20Tail-Wag%20Animation%20(1.5x).gif"
+              src="/assets/cat.webp"
               alt="CATSTATE Competition Robot"
-              width={640}
-              height={640}
+              width={500}
+              height={500}
               priority
-              className="object-contain"
+              className="object-contain relative z-0"
+            />
             />
           </motion.div>
         </div>

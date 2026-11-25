@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "framer-motion": "^14.14.0",
+<<<<<<< HEAD
     "lucide-react": "^1.80.0",
+=======
+    "lucide-react": "^1.78.0",
+>>>>>>> b173aabf00aa5278b4abb93f6c373025d22fe29d
     "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0"

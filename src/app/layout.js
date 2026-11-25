@@ -1,19 +1,27 @@
-import { Space_Grotesk, Inter, IBM_Plex_Mono } from "next/font/google";
+import localFont from "next/font/local";
+import { Chakra_Petch, Exo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const nasalization = localFont({
+  src: "../fonts/Nasalization.otf",
+  variable: "--font-nasalization",
+  display: "swap",
+});
+
+const chakraPetch = Chakra_Petch({
+  variable: "--font-chakra-petch",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const exo = Exo({
+  variable: "--font-exo",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
 });
@@ -31,7 +39,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${inter.variable} ${ibmPlexMono.variable} h-full antialiased`}
+      className={`${nasalization.variable} ${chakraPetch.variable} ${exo.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />

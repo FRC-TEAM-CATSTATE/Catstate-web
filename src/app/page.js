@@ -20,8 +20,8 @@ export default function Home() {
     <div className="bg-paper text-ink">
       {/* HERO */}
       <section className="text-paper relative overflow-hidden rough tex-grid">
-        <div className="absolute inset-0 bg-ink/75" />
-        <div className="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center relative z-10">
+        <div className="absolute inset-0 bg-ink/90" />
+        <div className="max-w-7xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center relative z-10">
           <motion.div
             initial="hidden"
             animate="show"
@@ -54,13 +54,13 @@ export default function Home() {
             <motion.div variants={fadeUp} className="flex gap-4 pt-2">
               <Link
                 href="/robot"
-                className="inline-flex items-center gap-2 bg-steel text-paper px-6 py-3 font-heading font-semibold text-sm border-2 border-ink shadow-[3px_3px_0_#161F30] hover:bg-amber hover:text-ink transition-colors"
+                className="inline-flex items-center gap-2 bg-steel text-paper px-4 py-3 font-heading font-semibold text-sm border-2 border-ink shadow-[3px_3px_0_#161F30] hover:bg-amber hover:text-ink transition-colors"
               >
                 Explore Robot <ArrowRight size={16} />
               </Link>
               <Link
                 href="/sponsors"
-                className="inline-flex items-center gap-2 border-2 border-ice px-6 py-3 font-heading font-semibold text-sm shadow-[3px_3px_0_#CAD9DC] hover:border-amber hover:text-amber transition-colors"
+                className="inline-flex items-center gap-2 border-2 border-ice px-4 py-3 font-heading font-semibold text-sm shadow-[3px_3px_0_#CAD9DC] hover:border-amber hover:text-amber transition-colors"
               >
                 Partner With Us
               </Link>
@@ -71,21 +71,23 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center"
+            className="flex justify-center relative"
           >
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent z-10 pointer-events-none" />
             <Image
-              src="/assets/Competition Robot 12364 Isolated.png"
+              src="/assets/cat.webp"
               alt="CATSTATE Competition Robot"
-              width={640}
-              height={640}
+              width={500}
+              height={500}
               priority
-              className="object-contain"
+              className="object-contain relative z-0"
             />
           </motion.div>
         </div>
       </section>
 
       {/* ENGINEERING INTRO */}
+      <div className="sep" />
       <section className="relative">
         <div className="relative h-[420px] overflow-hidden">
           <Image
@@ -96,7 +98,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-ink/70" />
           <div className="absolute inset-0 flex items-center">
-            <div className="max-w-7xl mx-auto px-6 w-full">
+            <div className="max-w-7xl mx-auto px-4 w-full">
               <motion.div
                 initial="hidden"
                 whileInView="show"
@@ -124,7 +126,8 @@ export default function Home() {
       </section>
 
       {/* ENGINEERING CARDS */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+      <div className="sep" />
+      <section className="max-w-7xl mx-auto px-4 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial="hidden"
@@ -184,8 +187,9 @@ export default function Home() {
       </section>
 
       {/* STATS */}
+      <div className="sep" />
       <section className="bg-ink text-paper py-20 rough">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -213,7 +217,8 @@ export default function Home() {
       </section>
 
       {/* GEAR STRIP */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+      <div className="sep" />
+      <section className="max-w-7xl mx-auto px-4 py-20">
         <div className="grid md:grid-cols-3 gap-6">
           <div className="md:col-span-1 flex flex-col justify-center">
             <p className="font-mono text-xs text-steel tracking-widest mb-2">
@@ -255,8 +260,9 @@ export default function Home() {
       </section>
 
       {/* CTA */}
+      <div className="sep" />
       <section className="bg-steel text-paper py-16">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h2 className="font-heading text-3xl font-bold">Join the build.</h2>
             <p className="text-paper/80 mt-1">
@@ -265,7 +271,7 @@ export default function Home() {
           </div>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-ink text-paper px-6 py-3 font-heading font-semibold text-sm border-2 border-amber shadow-[3px_3px_0_#F2A65A] hover:bg-amber hover:text-ink transition-colors"
+            className="inline-flex items-center gap-2 bg-ink text-paper px-4 py-3 font-heading font-semibold text-sm border-2 border-amber shadow-[3px_3px_0_#F2A65A] hover:bg-amber hover:text-ink transition-colors"
           >
             Get in touch <ArrowRight size={16} />
           </Link>

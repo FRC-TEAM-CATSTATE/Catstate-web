@@ -30,7 +30,7 @@ export default function Team() {
           transition={{ duration: 0.6 }}
           className="relative aspect-[16/9] overflow-hidden border-4 border-ink shadow-[6px_6px_0_#161F30] tex-concrete"
         >
-          <Image src="/team.jpeg" alt="CATSTATE team" fill className="object-cover" />
+          <Image src="/team-photo.jpeg" alt="CATSTATE team" fill className="object-cover" />
         </motion.div>
       </section>
 

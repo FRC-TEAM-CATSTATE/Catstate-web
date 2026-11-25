@@ -71,17 +71,15 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center relative"
+            className="flex justify-center"
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent z-10 pointer-events-none" />
             <Image
               src="/assets/cat.webp"
               alt="CATSTATE Competition Robot"
               width={500}
               height={500}
               priority
-              className="object-contain relative z-0"
-            />
+              className="object-contain"
             />
           </motion.div>
         </div>
